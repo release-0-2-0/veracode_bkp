@@ -7,18 +7,17 @@ concurrency:
 
 on:
   repository_dispatch:
-    types: [
-      java-maven-sandbox-scan,
-      java-gradle-sandbox-scan,
-      source-code-sandbox-scan,
-      dot-net-sandbox-scan,
-      go-sandbox-scan,
-      tsql-sandbox-scan,
-      plsql-sandbox-scan,
-      php-sandbox-scan,
-      scala-sandbox-scan,
-      dart-sandbox-scan
-    ]
+    types: 
+      - java-maven-sandbox-scan
+      - java-gradle-sandbox-scan
+      - source-code-sandbox-scan
+      - dot-net-sandbox-scan
+      - go-sandbox-scan
+      - tsql-sandbox-scan
+      - plsql-sandbox-scan
+      - php-sandbox-scan
+      - scala-sandbox-scan
+      - dart-sandbox-scan
 
 jobs:
   build:
