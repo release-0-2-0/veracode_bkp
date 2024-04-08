@@ -46,7 +46,7 @@ jobs:
     steps: 
       # Create check run
       - name: GitHub API Request to create a check
-        if: ${{ inputs.event_type != 'veracode-sast-sandbox-scan' }}
+        # if: ${{ inputs.event_type != 'veracode-sast-sandbox-scan' }}
         uses: octokit/request-action@v2.x
         id: create_check_run
         with:
